@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabji Ghar Tak</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Quicksand', sans-serif;
+
+  }
+
+  header h1 {
+    font-family: 'Merienda', cursive;
+    background-color: #2e7d32;
+    min-height: 120px;
+    color: white;
+  }
+
+  .home-section p {
+    font-size: xx-large;
+  }
+
+  .home-section img {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  }
+
+  .home-section {
+
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #333333;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  }
+
+  .navbar-section {
+    font-size: x-large;
+    font-weight: bold;
+
+  }
+
+  .btn {
+    font-size: x-large;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .home-section .btn:hover {
+    background-color: #1b5e20;
+
+  }
+
+  .material-icons {
+    font-size: 24px;
+    vertical-align: middle;
+    color: white;
+  }
+
+  .about-section {
+    background-color: #F1F8F4;
+    color: #2C2C2C;
+    min-height: 35vh;
+  }
+
+  .about-section h2 {
+    color: #2e7d32;
+    font-weight: bold;
+  }
+
+  .products-section {
+    max-width: 1500px;
+    margin: auto;
+    margin-bottom: 60px;
+  }
+
+  .products-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #2e7d32;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-8px);
+  }
+
+  .card-header {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .card-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card-footer {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-footer h4 {
+    color: #333;
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #1b5e20;
+  }
+  .explore-more{
+    background-color: #F1F8F4;
+    color: #2C2C2C;
+
+  }
+</style>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      <h1 class="text-center px-3 d-flex align-items-center justify-content-center display-2 fw-bolder">Sabji Ghar
+        Tak</h1>
+    </div>
+    <div class="container-fluid navbar-section">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2e7d32;">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">
+            <img src="logo2.png" alt="Sabji Ghar Tak Logo" style="height: 60px;">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="material-icons">shopping_cart</i> Cart
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="material-icons">call</i> +91 4589668706
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="material-icons">search</i>
+
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="home-section container-fluid">
+    <div class="container py-3 text-center col-8 col-md-8">
+      <h1 class="lead display-2">100% FRESH & ORGANIC VEGETABLES</h1>
+      <p>Freshness at your doorstep, every single day</p>
+      <button class="btn" style="color: white; background-color: #2E7D32;">View details</button>
+
+    </div>
+    <div class="container py-3 text-center col-4 col-md-4">
+      <img class="img-fluid rounded" src="img1.png" alt="VEGETABLES" style="height: 400px; height: 400px;">
+    </div>
+
+  </section>
+
+  <section class="about-section py-4">
+    <div class="container">
+      <h2 class="text-center display-6 py-3">Welcome to our online store...</h2>
+      <p class="text-dark fs-4">Welcome to our online vegetable store <i><strong>(sabzi ghar tak)</strong></i>, your
+        one-stop destination for fresh, healthy, and farm-picked vegetables
+        delivered straight to your doorstep. We offer a wide variety of seasonal and organic produce to ensure your
+        meals are nutritious and full of flavor. With easy ordering, fast delivery, and affordable prices, shopping for
+        vegetables has never been more convenient. Eat fresh, stay healthy—shop with us today.</p>
+    </div>
+  </section>
+  <section class=" container products-section pt-3">
+    <h2 class="products-title">Our Fresh Vegetables</h2>
+
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="card">
+        <div class="card-header">Broccoli</div>
+        <div class="card-img">
+          <img src="broccoli.webp" alt="Broccoli">
+        </div>
+        <div class="card-footer">
+          <h4>₹30/kg</h4>
+          <button class="btn">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="card">
+        <div class="card-header">Carrot</div>
+        <div class="card-img">
+          <img src="carrot.webp" alt="Carrot">
+        </div>
+        <div class="card-footer">
+          <h4>₹25/kg</h4>
+          <button class="btn">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="card">
+        <div class="card-header">Tomato</div>
+        <div class="card-img">
+          <img src="tomato.webp" alt="Tomato">
+        </div>
+        <div class="card-footer">
+          <h4>₹20/kg</h4>
+          <button class="btn">Buy Now</button>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="card">
+        <div class="card-header">Brinjal</div>
+        <div class="card-img">
+          <img src="brinjal.webp" alt="brinjal">
+        </div>
+        <div class="card-footer">
+          <h4>₹35/kg</h4>
+          <button class="btn">Buy Now</button>
+        </div>
+      </div>
+      <!-- Product 5 -->
+      <div class="card">
+        <div class="card-header">Cauliflower</div>
+        <div class="card-img">
+          <img src="cauliflower.webp" alt="Cauliflower">
+        </div>
+        <div class="card-footer">
+          <h4>₹35/kg</h4>
+          <button class="btn">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="card">
+        <div class="card-header">Spinach</div>
+        <div class="card-img">
+          <img src="spinach.webp" alt="Spinach">
+        </div>
+        <div class="card-footer">
+          <h4>₹15/bunch</h4>
+          <button class="btn">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="card">
+        <div class="card-header">Potato</div>
+        <div class="card-img">
+          <img src="potato.webp" alt="Potato">
+        </div>
+        <div class="card-footer">
+          <h4>₹18/kg</h4>
+          <button class="btn">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="card">
+        <div class="card-header">Onion</div>
+        <div class="card-img">
+          <img src="onion.webp" alt="Onion">
+        </div>
+        <div class="card-footer">
+          <h4>₹22/kg</h4>
+          <button class="btn">Buy Now</button>
+        </div>
+      </div>
+      <!-- Product 9 -->
+      <div class="card">
+        <div class="card-header">Cabbage</div>
+        <div class="card-img">
+          <img src="cabbage.webp" alt="Cabbage">
+        </div>
+        <div class="card-footer">
+          <h4>₹28/kg</h4>
+          <button class="btn">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Product 10 -->
+      <div class="card">
+        <div class="card-header">Capsicum</div>
+        <div class="card-img">
+          <img src="capsicum.webp" alt="Capsicum">
+        </div>
+        <div class="card-footer">
+          <h4>₹40/kg</h4>
+          <button class="btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="explore-more d-flex align-items-center justify-content-center py-5">
+    <div class="container text-center col-md-7">
+      <h1 class="lead" style="font-size: xx-large;">🥦 Why Choose <strong style="color: #1b5e20;"> Sabji Ghar Tak? </strong></h1>
+      <p style="font-size:large;">🌿 Farm-Fresh Quality
+        We bring you the freshest vegetables straight from local farms. No middlemen, no long storage — just crisp,
+        clean, and chemical-free produce at your doorstep. <br>
+
+        ⏱️ Fast & Reliable Delivery
+        Get your sabji delivered quickly and safely. We ensure timely delivery so you always have what you need to cook
+        healthy, tasty meals. <br>
+
+        💰 Affordable Prices
+        Enjoy the best prices in town without compromising on quality. Healthy eating shouldn't cost a fortune! <br>
+
+        📦 Hygienic Packaging
+        Each item is packed with care to maintain cleanliness and freshness during transit — because your family
+        deserves the best. <br>
+
+        📍 Local & Trustworthy
+        We are part of your community. We support local farmers and value the trust of our neighborhood customers. <br>
+
+        📞 Friendly Customer Support
+        Have a question or special request? We’re just a call or message away!</p>
+    </div>
+    <div class="container col-md-5">
+      <img src="why choose.jpg" alt="" class="img-fluid">
+    </div>
+
+  </section>
+  
+
+
+  <footer style="background-color: #2e7d32; color: white; padding: 30px 20px; font-family: sans-serif;">
+    <div style="max-width: 1000px; margin: auto; text-align: center;">
+
+      <h2 style="margin-bottom: 10px;font-style: italic;">Bringing farm freshness to your doorstep.</h2>
+      <p><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i>India</p>
+      <p><i class="fas fa-phone" style="margin-right: 8px;"></i>+91 4589668706</p>
+      <p style="margin-right: 8px; font-size:large;">ghartaksabji@gmail.com</p>
+
+
+      <div style="margin-top: 20px;">
+        <h3 style="margin-bottom: 10px;">Follow Us</h3>
+        <a href="#" style="color: white; margin-right: 15px; font-size: 1.5rem;"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" style="color: white; margin-right: 15px; font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+        <a href="#" style="color: white; font-size: 1.5rem;"><i class="fab fa-whatsapp"></i></a>
+      </div>
+
+      <hr style="border: 0; border-top: 1px solid #ffffff55; margin: 30px 0;">
+
+      <p style="margin: 0; font-size: 0.9rem; text-align: center;">&copy; 2025 Sabzi Ghar Tak. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
